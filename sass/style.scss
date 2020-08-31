@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$font-title: 'Rubik', sans-serif;
+$font-text: 'Roboto', sans-serif;
+
+$main-color: #334053;
+.gradient1 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6153cc+0,3d5a80+100 */
+  background: #6153cc; /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #6153cc 0%,
+    #3d5a80 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #6153cc 0%,
+    #3d5a80 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #6153cc 0%,
+    #3d5a80 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6153cc', endColorstr='#3d5a80',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body {
+  font-family: $font-text;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+/*
+header {
+  background: $main-color url(../images/back-header-1.png) no-repeat left center;
+  color: white;
+  .logo {
+    max-width: 200px;
+    margin-top: 10px;
+  }
+
+}
+*/
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  .header-content {
+    padding: 200px 0;
+    h3 {
+      font-size: 60px;
+      letter-spacing: -3px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  h1 {
+    @media (max-width: 700px) {
+      font-size: 3.5rem !important;
+    }
+    @media (max-width: 550px) {
+      font-size: 3rem !important;
+    }
+  }
+
+  .lead {
+    @media (max-width: 550px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+#nosotros {
+  padding: 60px 0;
+  @extend .gradient1;
+  color: white;
+}
+
+#unidades {
+  padding: 60px 0;
+
+  h2 {
+    margin: 20px 0 40px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  article {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    .marca {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      position: absolute;
+      width: 200px;
+      top: 10px;
+      left: -10px;
+      background: white;
+      @media (max-width: 990px) {
+        width: 150px;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 20px 0 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+#clientes {
+  padding: 30px 0;
+  h2 {
+    margin: 20px 0;
+  }
+  .clientes {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    list-style: none;
+    li {
+      padding: 10px;
+      border: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+      li {
+      }
+    }
+
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(2, 1fr);
+      li {
+      }
+    }
+  }
+}
+
+#ubicacion {
+  .fotos {
+    padding: 0;
+    display: flex;
+    margin-bottom: 0;
+    li {
+      flex: 1;
+    }
+
+    @media (nax-width: 600px) {
+    }
+  }
+}
+
+footer {
+  background: #333;
+  padding: 70px 0 30px;
+  color: white;
+  hr {
+    border-color: #555;
+  }
+}
