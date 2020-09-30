@@ -116,6 +116,9 @@ header .header-content h3 strong {
   padding: 60px 0;
   color: white;
 }
+#nosotros p {
+  font-size: 13px;
+}
 
 #unidades {
   padding: 60px 0;

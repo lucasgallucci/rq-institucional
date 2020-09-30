@@ -129,6 +129,9 @@ header {
   padding: 60px 0;
   @extend .gradient1;
   color: white;
+  p {
+    font-size: 13px;
+  }
 }
 
 #unidades {
